@@ -48,7 +48,7 @@ class FranceMinimumAgeChecker extends CountryMinimumAgeChecker {
 }
 //create a function that takes in an integer for a person's age and an array of objects of type : "country minimum age checker" 
 //that checks the minimum age for different activities in different countries
-let USA = new UsaMinimumAgeChecker('USA')
+let Usa = new UsaMinimumAgeChecker('USA')
 let France = new FranceMinimumAgeChecker('France')
 let Canada = new CanadaMinimumAgeChecker('Canada')
 let defaultCheck = new CountryMinimumAgeChecker('most countries')
@@ -62,15 +62,19 @@ function minimumAgeChecker(age, array) {
     });
 }
 
-age = 17
-array = [defaultCheck, USA, Canada, France]
+let age = 17
+let array = [defaultCheck, Usa, Canada, France]
 minimumAgeChecker(age, array)
 
 // //for extra credit create another function that takes an array of person objects like the one below and prints to the screen their status for an array of country checkers
-// person = { name: "John Doe", age: 17 }
+let person = { name: "John Doe", age: 17 }
+let person2 = { name: "Jane Doe", age: 22 }
+let objArray = [person,person2]
 
-// minimumAgeChecker(age, array)
-
+function objMinimumAgeChecker(nameArray, countryArray){
+    
+}
+objMinimumAgeChecker(objArray, array)
 //for extra credit add additional countries other than Usa,Canada, and France to the array and create minimum age checker classes for them
 
 
